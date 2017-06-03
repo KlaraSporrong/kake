@@ -7,10 +7,6 @@ angular.module('app')
 		}).catch(function(error) {
 		  console.error("Authentication failed:", error);
 		});
-		this.addKeyword('Java','skill');
-	}
-	this.addKeyword = function(word, type) {
-		FirebaseService.addKeyword(word, type);
 	}
 })
 .controller('LoginCtrl', function($scope, LoginService){

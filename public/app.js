@@ -7,8 +7,7 @@ angular.module('app',[
 	$stateProvider
   	.state('profile', {
   		url: '/profile',
-  		templateUrl: 'profile/profile.html',
-  		controller: 'UserCtrl'
+  		templateUrl: 'profile/profile.html'
   	})
 		.state('jobs', {
   		url: '/jobs',
