@@ -1,7 +1,15 @@
+.jobsWrapper {
+  width: 70%;
+  margin: auto;
+}
+.jobsWrapper h1 {
+  margin-top: 5%;
+  margin-left: 12px;
+}
 .candidate {
   background-color: #009DB2;
   color: white;
-  width: 35%;
+  width: 60%;
   margin: 2% 2% 2% 2%;
   padding: 20px;
 }
@@ -9,7 +17,7 @@
 .inline {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 20%;
+  /*margin-right: 20%;*/
 }
 
 .contactbutton {
@@ -24,7 +32,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 1px 30px;
+  margin: 1px 60px;
   cursor: pointer;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
