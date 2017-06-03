@@ -12,7 +12,8 @@ angular.module('app',[
   	})
 		.state('jobs', {
   		url: '/jobs',
-  		templateUrl: 'jobs/jobs.html'
+  		templateUrl: 'jobs/jobs.html',
+      controller: 'JobsCtrl'
   	})
 		.state('login', {
   		url: '/login',
