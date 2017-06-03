@@ -1,0 +1,15 @@
+.candidate {
+  background-color: #009DB2;
+  color: white;
+  width: 30%;
+  margin: 2% 2% 2% 2%;
+  padding: 20px;
+}
+
+.mailbutton {
+  background-color: #FF0081;
+  color: white;
+  width: 10%
+  margin: 30% 0 40px 0;
+  padding: 5px;
+}
