@@ -1,15 +1,19 @@
 angular.module('app')
 .service('LoginService', function(FirebaseService){
 	this.login = function() {
-		FirebaseService.authObj.$signInWithEmailAndPassword("my@email.com", "password").then(function(firebaseUser) {
+		FirebaseService.authObj.$signInWithEmailAndPassword("klara.sporrong@gmail.com", "hejhej").then(function(firebaseUser) {
 		  console.log("Signed in as:", firebaseUser.uid);
+		  $state.go('jobs');
 		}).catch(function(error) {
 		  console.error("Authentication failed:", error);
 		});
+		this.addKeyword('Java','skill');
+	}
+	this.addKeyword = function(word, type) {
+		FirebaseService.addKeyword(word, type);
 	}
 })
 .controller('LoginCtrl', function($scope, LoginService){
-
 	$scope.login = function() {
 		LoginService.login();
 	}

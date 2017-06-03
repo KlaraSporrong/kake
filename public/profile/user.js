@@ -11,6 +11,5 @@ angular.module('app')
 })
 .controller('UserCtrl', function(FirebaseService){
 	console.log('UserCtrl')
-	console.log(FirebaseService.init());
-	console.log(FirebaseService.signIn)
+
 })
