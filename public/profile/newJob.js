@@ -13,6 +13,7 @@ angular.module('app')
 	}
 	$scope.addSkill = function(skill) {
 		$scope.newJob.skills.push(skill);
+		$scope.keyword = '';
 	}
 	$scope.addNewSkill = function(skill) {
 		FirebaseService.addKeyword(skill, 'skill').then(function(){

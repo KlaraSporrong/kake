@@ -6,7 +6,7 @@
   <form class="addJobForm">
     <div id="addJobTitleContainer">
       <p class="addJobFormLabel">Position Title</p>
-      <input class="addJobFormInput" />
+      <input class="addJobFormInput" ng-model="newJob.title"/>
     </div>
 
     <div id="addJobSkillsContainer">
@@ -32,7 +32,7 @@
     <div class="messageBox">
       <h1>Thank you for creating a position</h1>
       <p>We will keep you updated!</p>
-      <a href="#" ng-click="popup=false"> Close</a>
+      <a href="#" ng-click="popup=false; keyword=''; newJob.title=''; newJob.skills=[]"> Close</a>
     </div>
   </div>
 
