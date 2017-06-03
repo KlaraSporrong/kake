@@ -1,12 +1,21 @@
 <div class="loginWrapper">
-  <div class="Welcomebox">
+
+  <div class="Welcomebox" ng-show="!hideWelcome">
     <h1>Welcome to KAKE</h1>
     <h2>What are you looking for?</h2>
     <div class="buttonContainer">
-      <button class="button">An employee</button>
-      <button class="button">A job</button>
+      <button class="button" ng-click="hideWelcome = true">An employee</button>
+      <button class="button" ng-click="hideWelcome = true">A job</button>
     </div>
   </div>
-  <!--<button type="submit">Submit</button>
-  <script type="in/Login"></script> -->
+
+  <div class="Loginbox" ng-show="hideWelcome">
+    <h1>Login</h1>
+    <h2>Username</h2> <input type="text">
+    <h2>Password</h2> <input type="text">
+    <script type="in/Login"></script>
+    <div class="buttonContainer">
+      <button class="button">Login</button>
+    </div>
+  </div>
 </div>
