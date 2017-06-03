@@ -1,26 +1,36 @@
 .loginWrapper {
+  background-image: url("https://galloskog.se/wp-content/uploads/revslider/Slider_2015/forrest-1024x682.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 .buttonContainer {
   height: 200px;
   width: 800px;
   text-align: center;
 }
-.Welcomebox {
+.Welcomebox, .Loginbox {
   background-color: white;
   height: 500px;
   width: 800px;
-  margin: auto;
+  margin: 100px auto 0;
   border: 1px solid black;
+  border-radius: 40px;
 }
 .Welcomebox h1{
   letter-spacing: 10px;
   margin-top: 120px;
   text-align: center;
   font-size: 350%;
+  font-style: bold;
   color: black;
 }
 .Welcomebox h2{
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
   font-size: 200%;
   color: black;
@@ -40,4 +50,18 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.Loginbox h1{
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-bottom: 60px;
+  font-size: 300%;
+  font-style: bold;
+  color: black;
+}
+.Loginbox h2{
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 150%;
+  color: black;
 }
