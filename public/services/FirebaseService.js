@@ -23,14 +23,13 @@ angular.module('app')
 		var list = $firebaseArray(keywords);
 		console.log(keyword)
 		console.log(type)
-		list.$add({ word: keyword, type: type }).then(function(success){
-			console.log(success)
-		});
+		return list.$add({ word: keyword, type: type });
 	}
 	this.getKeywords = function() {
 		var defer = $q.defer();
 		this.ref.child('keywords').once('value').then(function(snapshot){
 	    	var keywords = snapshot.val();
+	    	savedKeywords = keywords;
 	    	if(keywords === null) {
 	    		defer.reject('no keywords');
 	    	} else {
@@ -51,7 +50,5 @@ angular.module('app')
 		})
 		return results;
 	}
-	this.getKeywords().then(function(keywords){
-		savedKeywords = keywords;
-	});
+	this.getKeywords();
 }])

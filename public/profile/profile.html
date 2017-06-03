@@ -13,8 +13,9 @@
       <p class="addJobFormLabel">Skills</p>
       <input class="addJobFormInput" ng-model="keyword" ng-change="searchKeyword(keyword)"/>
       <p class="addJobFormLabel"></p>
-      <div class="searchResults" ng-if="searchResult">
+      <div class="searchResults" ng-hide="!searchResult || keyword.length < 1 ">
         <button class="resultValue" ng-repeat="result in searchResult" ng-click="addSkill(result)">{{result.word}}</button>
+        <button class="addValue" ng-click="addNewSkill(keyword); addSkill({word:keyword, type:'skill'})" ng-hide="searchResult.length > 0">+ Add skill</button>
       </div>
     </div>
 
@@ -22,25 +23,9 @@
   </form>
 
   <div class="skillsListContainer">
-<!--     <p><b>Skills</b></p>
-    <ul id="skillsList" ng-repeat="skill in newJob.skills" ng-if="skill.type ==='skill'"> -->
     <ul id="skillsList" ng-repeat="skill in newJob.skills">
       <li>{{skill.word}}</li>
     </ul>
-<!--     <p><b>Personality Traits</b></p>
-    <ul id="skillsList" ng-repeat="skill in newJob.skills" ng-if="skill.type ==='quality'">
-    <ul id="skillsList" ng-repeat="skill in newJob.skills">
-      <li>{{skill.word}}</li>
-    </ul>-->
-  </div>
-
-  <!--<h2>Skills</h2> -->
-  <div ng-repeat="(key, value) in keywords" ng-if="value.type==='skill'">
-    {{value.word}}
-  </div>
-  <!-- <h2>Personality Traits</h2> -->
-  <div ng-repeat="(key, value) in keywords" ng-if="value.type==='quality'">
-    {{value.word}}
   </div>
 
   <div class="popup" ng-show="popup">
