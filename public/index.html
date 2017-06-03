@@ -49,17 +49,17 @@
 
   </head>
   <body id="app" ng-app="app">
-  <script>
-      function onLinkedInLogin() {
-       // pass user info to angular
-       angular.element(document.getElementById("app")).scope().$apply(
-       function($scope) {
-        console.log(this)
-        console.log($scope)
-          // $scope.getLinkedInData();
-       });
-    }
-  </script>
+    <script>
+        function onLinkedInLogin() {
+         // pass user info to angular
+         angular.element(document.getElementById("app")).scope().$apply(
+         function($scope) {
+          console.log(this)
+          console.log($scope)
+            // $scope.getLinkedInData();
+         });
+      }
+    </script>
     <menu></menu>
     <div ui-view></div>
   </body>
