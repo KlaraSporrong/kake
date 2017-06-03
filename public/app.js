@@ -19,23 +19,13 @@ angular.module('app',[
 })
 .controller('HomeCtrl', function($scope, User){
 	console.log('Home')
-	$scope.name = User.getName();
-  $scope.getLinkedInData = function() {
-  if(!$scope.hasOwnProperty("userprofile")){
-  IN.API.Profile("me").fields(
-  [ "id", "firstName", "lastName", "pictureUrl",
-  "publicProfileUrl" ]).result(function(result) {
-  // set the model
-  $rootScope.$apply(function() {
-  var userprofile = result.values[0];
-  $rootScope.userprofile = userprofile;
-  $rootScope.loggedUser = true;
-  //go to main
-  $location.path("/main");
+  IN.Event.on(IN, "auth", function(e){
+        IN.API.Profile("me").fields(
+          [ "id", "firstName", "lastName", "pictureUrl",
+          "publicProfileUrl","positions" ]).result(function(result) {
+              console.log(result)
+          });
+    }, function(error){
+      console.log(error)
+    });
   });
-  }).error(function(err) {
-  $scope.error = err;
-  });
-  }
-  };
-})

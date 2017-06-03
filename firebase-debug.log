@@ -3,7 +3,7 @@
 [debug] CLI Version:  3.9.0
 [debug] Platform:     darwin
 [debug] Node Version: v6.10.3
-[debug] Time:         Fri Jun 02 2017 22:56:12 GMT+0200 (CEST)
+[debug] Time:         Sat Jun 03 2017 11:31:20 GMT+0200 (CEST)
 [debug] ----------------------------------------------------------------------
 [debug] 
 [debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
@@ -13,22 +13,22 @@
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Fri Jun 02 2017 22:56:12 GMT+0200 (CEST)
+ Sat Jun 03 2017 11:31:20 GMT+0200 (CEST)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/openhack-fa8b6  
- Fri Jun 02 2017 22:56:12 GMT+0200 (CEST)
+ Sat Jun 03 2017 11:31:21 GMT+0200 (CEST)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/openhack-fa8b6/tokens  
- Fri Jun 02 2017 22:56:13 GMT+0200 (CEST)
+ Sat Jun 03 2017 11:31:21 GMT+0200 (CEST)
 [debug] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/klarasporrong/Google Drive/Kodning/openhack'...
 [info] 
 [debug] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/openhack-fa8b6  
- Fri Jun 02 2017 22:56:14 GMT+0200 (CEST)
+ Sat Jun 03 2017 11:31:22 GMT+0200 (CEST)
 [debug] <<< HTTP RESPONSE 200
 [debug] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/810862575296/clients/_:getWebAppConfig  
- Fri Jun 02 2017 22:56:15 GMT+0200 (CEST)
+ Sat Jun 03 2017 11:31:23 GMT+0200 (CEST)
 [debug] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
