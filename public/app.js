@@ -32,7 +32,7 @@ angular.module('app',[
     firebase.initializeApp(config);
 })
 .run(function($state){
-  // $state.go('login')
+  $state.go('login')
 })
 .controller('HomeCtrl', function($scope, User){
 	console.log('Home')
