@@ -1,5 +1,6 @@
 angular.module('app')
 .service('User', function(){
+
 	this.name = 'Klara';
 	this.age = 27;
 
@@ -8,6 +9,8 @@ angular.module('app')
 	}
 
 })
-.controller('UserCtrl',function(){
-
+.controller('UserCtrl', function(FirebaseService){
+	console.log('UserCtrl')
+	console.log(FirebaseService.init());
+	console.log(FirebaseService.signIn)
 })
