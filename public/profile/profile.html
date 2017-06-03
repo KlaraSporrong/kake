@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <button type="submit" class="button" id="addJobButton">Create position</button>
+    <button type="submit" class="button" ng-click ="popup=true" id="addJobButton">Create position</button>
   </form>
 
   <div class="skillsListContainer">
@@ -28,19 +28,27 @@
       <li>{{skill.word}}</li>
     </ul>
 <!--     <p><b>Personality Traits</b></p>
-    <ul id="skillsList" ng-repeat="skill in newJob.skills" ng-if="skill.type ==='quality'"> 
+    <ul id="skillsList" ng-repeat="skill in newJob.skills" ng-if="skill.type ==='quality'">
     <ul id="skillsList" ng-repeat="skill in newJob.skills">
       <li>{{skill.word}}</li>
     </ul>-->
   </div>
 
-  <h2>Skills</h2>
+  <!--<h2>Skills</h2> -->
   <div ng-repeat="(key, value) in keywords" ng-if="value.type==='skill'">
     {{value.word}}
   </div>
-  <h2>Personality Traits</h2>
+  <!-- <h2>Personality Traits</h2> -->
   <div ng-repeat="(key, value) in keywords" ng-if="value.type==='quality'">
     {{value.word}}
+  </div>
+
+  <div class="popup" ng-show="popup">
+    <div class="messageBox">
+      <h1>Thank you for creating a position</h1>
+      <p>We will keep you updated!</p>
+      <a href="#" ng-click="popup=false"> Close</a>
+    </div>
   </div>
 
 </div>

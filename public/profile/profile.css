@@ -2,6 +2,9 @@
   width: 70%;
   margin: auto;
 }
+.profileWrapper h1{
+  margin-top: 5%;
+}
 .addJobForm {
   display: inline-block;
   width: 40%;
@@ -28,7 +31,7 @@
 }
 .skillsListContainer {
   vertical-align: top;
-  margin-left: 50px;
+  margin-left: 150px;
   width: 30%;
   display: inline-block;
   border-style: solid;
@@ -56,4 +59,24 @@
 }
 .resultValue:hover {
   background-color: #008075;
+}
+.popup {
+  position: fixed;
+  padding: 20px;
+  width: 350px;
+  left: 50%;
+  margin-left: -150px;
+  height: 220px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  z-index: 20;
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-radius: medium;
+  border-color: #B21565;
+}
+.messageBox {
+  text-align: center;
 }
