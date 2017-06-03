@@ -3,7 +3,7 @@ angular.module('app')
 	this.login = function() {
 		FirebaseService.authObj.$signInWithEmailAndPassword("klara.sporrong@gmail.com", "hejhej").then(function(firebaseUser) {
 		  console.log("Signed in as:", firebaseUser.uid);
-		  $state.go('jobs');
+		  // $state.go('jobs');
 		}).catch(function(error) {
 		  console.error("Authentication failed:", error);
 		});
