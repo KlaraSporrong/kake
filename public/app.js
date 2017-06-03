@@ -15,6 +15,10 @@ angular.module('app',[
   		templateUrl: 'profile/profile.html',
   		controller: 'UserCtrl'
   	})
+		.state('jobs', {
+  		url: '/jobs',
+  		templateUrl: 'jobs/jobs.html'
+  	})
   	$locationProvider.html5Mode(true);
 })
 .controller('HomeCtrl', function($scope, User){
