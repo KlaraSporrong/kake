@@ -4,4 +4,8 @@ angular.module('app')
 		$scope.keywords = keywords;
 		$scope.person ='';
 	})
+
+	$scope.addKeyword = function(word, type){
+		FirebaseService.addKeyword(word, type);
+	}
 })

@@ -7,8 +7,7 @@ angular.module('app',[
 	$stateProvider
   	.state('profile', {
   		url: '/profile',
-  		templateUrl: 'profile/profile.html',
-  		controller: 'UserCtrl'
+  		templateUrl: 'profile/profile.html'
   	})
 		.state('jobs', {
   		url: '/jobs',
@@ -33,7 +32,7 @@ angular.module('app',[
     firebase.initializeApp(config);
 })
 .run(function($state){
-  $state.go('login')
+  // $state.go('login')
 })
 .controller('HomeCtrl', function($scope, User){
 	console.log('Home')

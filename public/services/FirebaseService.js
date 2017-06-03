@@ -3,6 +3,7 @@ angular.module('app')
 	this.authObj = $firebaseAuth();
 	this.ref = firebase.database().ref(); // assume value here is { foo: "bar" }
 	this.firebaseObj = $firebaseObject(this.ref);
+	var savedKeywords = {};
 	console.log(this.firebaseObj)
 	this.signIn = function() {
 		return this.authObj.$signInWithEmailAndPassword;
@@ -38,7 +39,19 @@ angular.module('app')
 		})
 		return defer.promise;
 	}
+	this.searchKeyword = function(string) {
+		var results = [];
+		if(string === '') {
+			return null;
+		}
+		angular.forEach(savedKeywords, function(val, index){
+			if(val.word.toLowerCase().indexOf(string.toLowerCase()) != -1) {
+				results.push(val)
+			}
+		})
+		return results;
+	}
 	this.getKeywords().then(function(keywords){
-		console.log(keywords)
+		savedKeywords = keywords;
 	});
 }])
