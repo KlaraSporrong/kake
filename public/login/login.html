@@ -16,23 +16,22 @@
 
   <div class="Loginbox" ng-show="hideWelcome">
     <h1>Sign in</h1>
-    <form class="addLogin">
-      <div id="addUsername">
-        <h2 class="addLoginLabel">Username</h2>
-        <input class="addLoginInput" />
-      </div>
+    <div class="left-container">
+   		<div id="addUsername">
+	        <h2 class="addLoginLabel">Username</h2>
+	        <input class="addLoginInput" />
+	    </div>
 
-      <div id="addPassword">
-        <h2 class="addLoginLabel">Password</h2>
-        <input class="addLoginInput" />
-      </div>
+	    <div id="addPassword">
+	        <h2 class="addLoginLabel">Password</h2>
+	        <input class="addLoginInput" />
+	    </div>
+	    <a class="button" ui-sref="profile" ng-click="login()">Sign in</a>
+    </div>
 
-      <div id="addLinkedIn">
-        <script type="in/Login"></script>
-      </div>
-
-    <div class="buttonContainer">
-      <a class="button" ui-sref="profile" ng-click="login()">Sign in</a>
+    <div class="right-container">
+    	<p>or Sign in with LinkedIn</p>
+    	<a ui-sref="profile" class="button" id="linkedin-btn" ng-click="login()">Sign in with LinkedIn</a>
     </div>
   </div>
 </div>
