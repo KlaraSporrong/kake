@@ -1,0 +1,17 @@
+.profileWrapper {
+}
+#addJobContainer {
+}
+#addJobTitleContainer {
+  display: inline-block;
+}
+#addJobSkillsContainer {
+}
+#skillsListContainer {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #B21565;
+}
+#skillsList {
+  list-style-type: none;
+}
