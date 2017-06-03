@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kake</title>
+
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="menu/menu.css">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.1.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.1.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.1.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.1.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.1.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+<!--     <script src="lib/angular-aria/angular-aria.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-material/angular-material.js"></script> -->
+
+        <!-- Firebase -->
+    <script src="lib/firebase/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="lib/angularfire/dist/angularfire.min.js"></script>
+
+    <script type="text/javascript" src="//platform.linkedin.com/in.js">
+        api_key: 78g08m9wof4ctl
+        onLoad: onLinkedInLogin
+        authorize: true
+    </script>
+
+    <script src="app.js"></script>
+    <script src="profile/user.js"></script>
+    <script src="menu/menu.js"></script>
+
+    <base href="/">
+
+  </head>
+  <body id="app" ng-app="app">
+  <script>
+      function onLinkedInLogin() {
+       // pass user info to angular
+       angular.element(document.getElementById("app")).scope().$apply(
+       function($scope) {
+        console.log(this)
+        console.log($scope)
+          $scope.getLinkedInData();
+       });
+    }
+  </script>
+    <menu></menu>
+    <div ui-view></div>
+  </body>
+</html>
