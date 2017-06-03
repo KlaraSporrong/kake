@@ -10,16 +10,6 @@
     <link rel="stylesheet" href="jobs/jobs.css">
     <link rel="stylesheet" href="login/login.css">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.1.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.1.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.1.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.1.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.1.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
@@ -38,12 +28,15 @@
         onLoad: onLinkedInLogin
         authorize: true
     </script>
+    
 
     <script src="app.js"></script>
     <script src="profile/user.js"></script>
     <script src="menu/menu.js"></script>
     <script src="jobs/jobs.js"></script>
     <script src="login/login.js"></script>
+    <script src="services/FirebaseService.js"></script>
+
 
     <base href="/">
 
