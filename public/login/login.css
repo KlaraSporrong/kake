@@ -1,8 +1,9 @@
 .loginWrapper {
 }
 .buttonContainer {
-  height: 50px;
-  width: 500px;
+  height: 200px;
+  width: 800px;
+  text-align: center;
 }
 .Welcomebox {
   background-color: white;
@@ -12,13 +13,31 @@
   border: 1px solid black;
 }
 .Welcomebox h1{
-  word-spacing: 30px;
-  margin: auto;
-  font-style: 600%;
-  color: grey;
+  letter-spacing: 10px;
+  margin-top: 120px;
+  text-align: center;
+  font-size: 350%;
+  color: black;
 }
 .Welcomebox h2{
-  margin: auto;
-  font-style: 300%;
-  color: grey;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 200%;
+  color: black;
+}
+.button {
+    background-color: #B21565;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 1px 30px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }

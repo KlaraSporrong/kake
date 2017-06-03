@@ -1,0 +1,14 @@
+.candidate {
+  background-color: #009DB2;
+  color: white;
+  width: 40%;
+  margin: 2% 2% 2% 2%;
+  padding: 20px;
+}
+
+.button {
+  background-color: #FF0081;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+}
