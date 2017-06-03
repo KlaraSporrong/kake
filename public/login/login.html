@@ -4,18 +4,18 @@
     <h1>Welcome to KAKE</h1>
     <h2>What are you looking for?</h2>
     <div class="buttonContainer">
-      <button class="button" ng-click="hideWelcome = true">An employee</button>
+      <button class="button" ng-click="hideWelcome = true; company = true" >An employee</button>
       <button class="button" ng-click="hideWelcome = true">A job</button>
     </div>
   </div>
 
   <div class="Loginbox" ng-show="hideWelcome">
     <h1>Login</h1>
-    <h2>Username</h2> <input type="text">
+    <div> <h2>Username</h2> <input type="text">
     <h2>Password</h2> <input type="text">
     <script type="in/Login"></script>
     <div class="buttonContainer">
-      <button class="button">Login</button>
+      <a class="button" ui-sref="profile">Login</a>
     </div>
   </div>
 </div>
