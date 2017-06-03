@@ -6,16 +6,33 @@
     <div class="buttonContainer">
       <button class="button" ng-click="hideWelcome = true; company = true" >An employee</button>
       <button class="button" ng-click="hideWelcome = true">A job</button>
+          <p> KAKE is the new revolutionary way to recruit. This HR-system is focused on <thead>
+            jobbseeker's skills and personality trades instead of the ordinary way, to
+            base the recruiting on CV's and diplomas. KAKE enables the best matches,
+            regardless for exempel education, disabilities or gender.
+          </thead></p>
     </div>
   </div>
 
   <div class="Loginbox" ng-show="hideWelcome">
-    <h1>Login</h1>
-    <div> <h2>Username</h2> <input type="text">
-    <h2>Password</h2> <input type="text">
-    <script type="in/Login"></script>
+    <h1>Sign in</h1>
+    <form class="addLogin">
+      <div id="addUsername">
+        <h2 class="addLoginLabel">Username</h2>
+        <input class="addLoginInput" />
+      </div>
+
+      <div id="addPassword">
+        <h2 class="addLoginLabel">Password</h2>
+        <input class="addLoginInput" />
+      </div>
+
+      <div id="addLinkedIn">
+        <script type="in/Login"></script>
+      </div>
+
     <div class="buttonContainer">
-      <a class="button" ui-sref="profile">Login</a>
+      <a class="button" ui-sref="profile">Sign in</a>
     </div>
   </div>
 </div>
