@@ -5,11 +5,6 @@ angular.module('app',[
 ])
 .config(function($stateProvider, $locationProvider) {
 	$stateProvider
-	.state('home', {
-		url: '/',
-  		templateUrl: 'home/home.html',
-  		controller: 'HomeCtrl'
-  	})
   	.state('profile', {
   		url: '/profile',
   		templateUrl: 'profile/profile.html',
@@ -18,6 +13,10 @@ angular.module('app',[
 		.state('jobs', {
   		url: '/jobs',
   		templateUrl: 'jobs/jobs.html'
+  	})
+		.state('login', {
+  		url: '/login',
+  		templateUrl: 'login/login.html'
   	})
   	$locationProvider.html5Mode(true);
 })
