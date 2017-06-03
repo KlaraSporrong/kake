@@ -6,8 +6,12 @@
   margin-top: 5%;
   margin-left: 12px;
 }
+.jobsWrapper p {
+  margin-left: 16px;
+  font-size: 15px;
+}
 .candidate {
-  background-color: #009DB2;
+  background-color: #008075;
   color: white;
   width: 60%;
   margin: 2% 2% 2% 2%;
