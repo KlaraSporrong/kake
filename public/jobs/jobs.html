@@ -1,24 +1,18 @@
-<div class="wrapper">
-
-  <h1>These are your top five matches</h1>
+<h1>These are your top five matches</h1>
   <div class = "candidate">
     <div class="inline">
     <h2> Applicant A </h2>
     <p> weigthed rating 87 % </p>
     </div>
-    <div class="contactbutton">
-      <p> Contact! </p>
+    <button class="contactbutton" ng-click="person='A'; choiceMade=true; popup=true"> Contact! </button>
     </div>
-  </div>
 
   <div class = "candidate">
     <div class="inline">
       <h2> Applicant B </h2>
       <p> weigthed rating 74 % </p>
     </div>
-    <div class="contactbutton">
-      <p> Contact! </p>
-    </div>
+    <button class="contactbutton" ng-click="person='B'; choiceMade=true; popup=true"> Contact! </button>
     </div>
 </div>
 
@@ -27,9 +21,7 @@
   <h2> Applicant C </h2>
   <p> weigthed rating 71 % </p>
   </div>
-  <div class="contactbutton">
-    <p> Contact! </p>
-  </div>
+  <button class="contactbutton" ng-click="person='C'; choiceMade=true; popup=true"> Contact! </button>
 </div>
 
 <div class = "candidate">
@@ -37,9 +29,7 @@
   <h2> Applicant D </h2>
   <p> weigthed rating 62 % </p>
   </div>
-  <div class="contactbutton">
-    <p> Contact! </p>
-  </div>
+  <button class="contactbutton" ng-click="person='D'; choiceMade=true; popup=true"> Contact! </button>
 </div>
 
 <div class = "candidate">
@@ -47,7 +37,14 @@
   <h2> Applicant E </h2>
   <p> weigthed rating 59 % </p>
   </div>
-  <div class="contactbutton">
-    <p> Contact! </p>
+  <button class="contactbutton" ng-click="person='E'; choiceMade=true; popup=true"> Contact! </button>
+</div>
+
+<div class="popup" ng-show="popup">
+  <div class="messageBox">
+    <h1>Congratulations to your match!</h1>
+    <p>We have notified applicant {{person}}</p>
+    <p>We hope you will like eachother</p>
+    <a href="#" ng-click="popup=false"> Thanks!</a>
   </div>
 </div>

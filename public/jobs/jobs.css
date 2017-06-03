@@ -1,7 +1,7 @@
 .candidate {
   background-color: #009DB2;
   color: white;
-  width: 40%;
+  width: 35%;
   margin: 2% 2% 2% 2%;
   padding: 20px;
 }
@@ -9,6 +9,7 @@
 .inline {
   display: inline-block;
   vertical-align: middle;
+  margin-right: 20%;
 }
 
 .contactbutton {
@@ -29,4 +30,25 @@
   transition-duration: 0.4s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+.popup {
+  position: fixed;
+  padding: 20px;
+  width: 350px;
+  left: 50%;
+  margin-left: -150px;
+  height: 220px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  z-index: 20;
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-radius: medium;
+  border-color: #B21565;
+}
+
+.messageBox {
+  text-align: center;
 }
