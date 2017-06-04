@@ -12,7 +12,7 @@
   height: 200px;
   width: 800px;
   text-align: center;
-  
+
 }
 .Welcomebox, .Loginbox {
   background-color: white;
@@ -38,10 +38,11 @@
   color: black;
 }
 .Welcomebox p{
-  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 40px;
   text-align: center;
-  font-size: 80%;
-  color: black;
+  font-size: 70%;
 }
 .button {
   background-color: #B21565;
